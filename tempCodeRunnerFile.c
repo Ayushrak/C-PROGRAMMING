@@ -1,2 +1,3 @@
-",a);//lu =%p
-     printf("%p ",&a);
+
+        return 0;
+    }

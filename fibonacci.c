@@ -1,23 +1,13 @@
-// 1 1 2 3 5 8 13 21 34 55;
 #include<stdio.h>
+int fibo(int n){
+    if(n==1||n==2) return 1;
+    return  fibo(n-1)+ fibo(n-2);
+}
 int main(){
-    int n;
-    printf("enter a number");
+    int  n;
+    printf("enter a number :");
     scanf("%d",&n);
-    int a=0;
-    int b=1;
-    int sum=1;
-    for(int i=1;i<=n;i++){
-        if(i<=1)
-        {
-        sum=i;
-        }
-        else{
-        sum = a+b;
-        a=b;
-        b=sum;
-        }
-    printf("%d\n",sum);
-    } 
+    //int x = fibo(n);
+    printf("%d",fibo(n));
     return 0;
 }
