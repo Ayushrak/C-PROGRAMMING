@@ -1,0 +1,3 @@
+student name: ayush
+student age: 19
+student cgpa: 9.200000
